@@ -27,6 +27,6 @@ const index = (req, res) => {
 
 module.exports = {
     index,
-    new: newFlight,
-    create
+    create,
+    new: newFlight
 }
