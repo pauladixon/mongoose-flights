@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flight Index</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Flight List</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>Airline</th>
+            <th>Airport</th>
+            <th>Flight Number</th>
+            <th>Departs: </th>
+          </tr>
+        </thead>
+        <tbody>
+          <% flights.forEach( (f) => { %>
+            <tr>
+              <td><%= f.airline %></td>
+              <td><%= f.airport %></td>
+              <td><%= f.flightNo %></td>
+              <td><%= f.departs %></td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+  </body>
+</html>
