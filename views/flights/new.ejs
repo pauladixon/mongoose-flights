@@ -8,16 +8,16 @@
 </head>
 <%- include('../partials/header') %>
 
-<form id="new-form" action="/flights" method="POST">
+<form class="new-form" action="/flights" method="POST">
   <label>Airline:
-      <select name="airline">
+      <select class="entry" name="airline">
         <option value="American">American</option>
         <option value="Southwest">Southwest</option>
         <option value="United">United</option>
       </select>
     </label><br>
   <label>Airport:
-    <select name="airport">
+    <select class="entry" name="airport">
       <option value="AUS">AUS</option>
       <option value="DFW">DFW</option>
       <option value="DEN">DEN</option>
@@ -26,12 +26,12 @@
     </select>
   </label><br>
   <label>Flight Number:
-    <input type="number" name="flightNo">
+    <input class="entry" type="number" name="flightNo">
   </label><br>
   <label>Departs at:
-    <input type="date" name="departs">
+    <input class="entry" type="datetime-local" name="departs">
   </label><br>
-  <input type="submit" value="Add Flight">
+  <input class="entry" type="submit" value="Add Flight">
 </form>
 
 <%- include('../partials/footer') %>
