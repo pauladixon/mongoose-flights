@@ -42,13 +42,4 @@ const flightSchema = new Schema({
     timestamps: true
 })
 
-
-// const deleteOne = (id) => {
-//     flights.splice(id, 1)
-// }
-
-// module.exports = {
-//     deleteOne
-// }
-
 module.exports = mongoose.model('Flight', flightSchema)

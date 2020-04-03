@@ -9,7 +9,23 @@
     <div><%= flight.flightNo %></div>
     <div>Departs at:</div>
     <div><%= flight.departs %></div>
+    <div>Tickets:</div>
+    <ul>
+        <%- tickets.map(p =>
+        `<li>${p.seat} <small>${p.price} ${p.flight}</small></li>`
+        ).join('') %>
+    </ul>
 </section>
+
+<form class="add-ticket-form" action="/flights/<%= flight._id%>/tickets" method="POST">
+    <select class="entry" name="ticketId">
+        <%- tickets.map(p =>
+        `<option value="${p._id}">${p.name}</option>`
+        ).join('') %>
+    </select>
+    <button class="entry" type="submit">Add to Flight</button>
+</form>
+
 
 <br><br>
 <h2>Destinations</h2>
