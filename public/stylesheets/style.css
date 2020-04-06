@@ -114,10 +114,6 @@ table td {
   font-size: 14px;
 }
 
-#list a:hover {
-  background-color: 	#a47429;
-}
-
 #show-page {
   display: grid;
   grid-template-columns: auto auto;
@@ -129,6 +125,21 @@ table td {
 }
 
 .entry {
+  background-color: 	#a47429;
+  color: whitesmoke;
+}
+
+.ticket-button a {
+  border-radius: 4px;
+  background-color:	#a47429;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.destination {
   background-color: 	#a47429;
   color: whitesmoke;
 }
