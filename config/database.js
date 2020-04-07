@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
-// const DATABASE_URL = 'mongodb://localhost/flights'
-const DATABASE_URL = 'mongodb+srv://pauladixon:sei@cluster0-dcvfs.mongodb.net/flights?retryWrites=true&w=majority'
+const DATABASE_URL = process.env.DATABASE_URL
 
 mongoose.connect(
     DATABASE_URL, 
